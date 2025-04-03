@@ -3,17 +3,10 @@ package main
 import "fmt"
 
 func main(){
-	a, b := 10, 3
-	fmt.Println(" A soma é ", a + b)
-	fmt.Println("A subtração é: ", a - b)
-	fmt.Println("A divisão é: ", a / b)
-	fmt.Println("A Multiplicação é: ", a * b)
-	fmt.Println("O resto da divisão: ", a % b)
-
-	a+=1
-	fmt.Println("Incrementar a", a)
-
-	if  a > 0 && b > 0 {
-		fmt.Println("Numeros Positivos")
-	}
+	var ages = [4]int{17, 16, 20, 40}
+	nomes := [4]string{"Mario", "Luigi", "DeadPool", "Superman"}
+	fmt.Println(ages)
+	fmt.Println(nomes)
+	nomes[3] = "Clark Kent"
+	fmt.Println(nomes)	
 }
